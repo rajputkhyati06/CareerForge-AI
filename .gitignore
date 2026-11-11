@@ -1,0 +1,64 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/cache
+
+# Testing
+/coverage
+
+# Next.js Build Output & Cache
+/.next/
+/out/
+
+# Production Build
+/build
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Local Environment Variables & Secrets
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vercel
+.vercel
+
+# Operating System Files
+.DS_Store
+*.pem
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.swp
+*.swo
+
+# Temporary & Local Scripts
+brain/
+slide_*.html
+slide_*.png
+slide_*.jpg
+generate_slide_4.py
+dev.bat
+dev.ps1
+npm.cmd
+npx.cmd

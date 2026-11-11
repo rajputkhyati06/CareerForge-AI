@@ -1,0 +1,52 @@
+[
+  {
+    "id": "t1",
+    "question": "Which of the following formula arguments is optional in SUMIF when the criteria range is identical to the numbers to sum?",
+    "options": [
+      "range",
+      "criteria",
+      "[sum_range]",
+      "None of the above"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "If [sum_range] is omitted, Excel automatically sums the cells in the range argument."
+  },
+  {
+    "id": "t2",
+    "question": "A financial analyst wants to sum all sales transactions where amount is greater than or equal to $10,000 in range B2:B50. Which formula is correct?",
+    "options": [
+      "=SUMIF(B2:B50, \">=10000\")",
+      "=SUMIF(B2:B50, >=10000)",
+      "=COUNTIF(B2:B50, \">=10000\")",
+      "=SUM(B2:B50, 10000)"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Logical operators in SUMIF criteria must be enclosed in double quotes \">=10000\"."
+  },
+  {
+    "id": "t3",
+    "question": "What is the expected output of =SUMIF(A1:A4, \"Pen\", B1:B4) if A1:A4 contains ['Pen', 'Pencil', 'Pen', 'Marker'] and B1:B4 contains [10, 5, 20, 15]?",
+    "options": ["10", "30", "50", "15"],
+    "correctOptionIndex": 1,
+    "explanation": "Row 1 (10) and Row 3 (20) match 'Pen'. The sum is 10 + 20 = 30."
+  },
+  {
+    "id": "t4",
+    "question": "Which wildcard character represents any single character in SUMIF criteria?",
+    "options": ["*", "?", "~", "#"],
+    "correctOptionIndex": 1,
+    "explanation": "The question mark (?) represents any single character in Excel search criteria."
+  },
+  {
+    "id": "t5",
+    "question": "Under CareerForge rules, if a student scores 60% (3 out of 5 correct) on this formal assessment, what happens to this topic test?",
+    "options": [
+      "The topic is passed and the test is permanently closed (no retests permitted)",
+      "The test remains open for unlimited retesting",
+      "The score is discarded and 20-min timer resets",
+      "The student must retake the test tomorrow"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "Under the universal 60% rule: score >= 60% passes and permanently closes the test."
+  }
+]

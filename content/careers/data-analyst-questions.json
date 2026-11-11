@@ -1,0 +1,167 @@
+[
+  {
+    "id": "q1",
+    "topicId": "excel-interface",
+    "topicTitle": "Excel Basics & Formatting",
+    "domainType": "EXCEL",
+    "question": "Which cell reference format prevents both the row number and column letter from changing when copying a formula across cells?",
+    "options": ["A1", "$A1", "A$1", "$A$1"],
+    "correctOptionIndex": 3,
+    "explanation": "$A$1 uses absolute referencing for both column (A) and row (1)."
+  },
+  {
+    "id": "q2",
+    "topicId": "excel-references",
+    "topicTitle": "Cell References & Basic Formulas",
+    "domainType": "EXCEL",
+    "question": "What will the formula =AVERAGE(10, 20, 30) return in Excel?",
+    "options": ["10", "20", "30", "60"],
+    "correctOptionIndex": 1,
+    "explanation": "The average of 10, 20, and 30 is (10 + 20 + 30) / 3 = 20."
+  },
+  {
+    "id": "q3",
+    "topicId": "excel-ifs",
+    "topicTitle": "Logical Functions (IF / IFS)",
+    "domainType": "EXCEL",
+    "question": "Which Excel formula evaluates multiple conditions sequentially without requiring nested IF statements?",
+    "options": ["VLOOKUP", "IFS", "SUMIF", "COUNTIF"],
+    "correctOptionIndex": 1,
+    "explanation": "The IFS function allows testing multiple conditions in sequence."
+  },
+  {
+    "id": "q4",
+    "topicId": "excel-sumif",
+    "topicTitle": "Conditional Sums (SUMIF / COUNTIF)",
+    "domainType": "EXCEL",
+    "question": "Which formula correctly sums revenue in range B2:B100 where column A matches 'East'?",
+    "options": [
+      "=SUM(A2:A100, 'East')",
+      "=SUMIF(A2:A100, \"East\", B2:B100)",
+      "=COUNTIF(B2:B100, \"East\")",
+      "=VLOOKUP(\"East\", A2:B100, 2)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "=SUMIF(range, criteria, sum_range) aggregates values based on criteria."
+  },
+  {
+    "id": "q5",
+    "topicId": "excel-xlookup",
+    "topicTitle": "Modern Lookups (XLOOKUP)",
+    "domainType": "EXCEL",
+    "question": "What advantage does XLOOKUP have over traditional VLOOKUP in Excel?",
+    "options": [
+      "It requires columns to be sorted alphabetically",
+      "It can look left of the lookup column and defaults to exact match",
+      "It only works with numeric values",
+      "It cannot handle missing values"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "XLOOKUP supports leftward lookups and defaults to exact matching."
+  },
+  {
+    "id": "q6",
+    "topicId": "excel-cleaning",
+    "topicTitle": "Data Cleaning & Prep",
+    "domainType": "EXCEL",
+    "question": "Which function removes leading, trailing, and repeated spaces from text in Excel?",
+    "options": ["CLEAN", "TRIM", "CONCATENATE", "UPPER"],
+    "correctOptionIndex": 1,
+    "explanation": "TRIM removes extra spaces from a text string."
+  },
+  {
+    "id": "q7",
+    "topicId": "excel-pivots",
+    "topicTitle": "Pivot Tables & Summaries",
+    "domainType": "EXCEL",
+    "question": "What feature in Pivot Tables allows interactive button-based filtering for dimensions like Region or Year?",
+    "options": ["Slicers", "Filters tab only", "Calculated Fields", "Data Validation"],
+    "correctOptionIndex": 0,
+    "explanation": "Slicers provide visual button controls for quick filtering in Pivot Tables."
+  },
+  {
+    "id": "q8",
+    "topicId": "sql-select-queries",
+    "topicTitle": "SQL SELECT & Basic Syntax",
+    "domainType": "SQL",
+    "question": "Which SQL clause is used to extract only unique values from a column?",
+    "options": ["SELECT UNIQUE", "SELECT DISTINCT", "GROUP UNIQUE", "FILTER DISTINCT"],
+    "correctOptionIndex": 1,
+    "explanation": "SELECT DISTINCT removes duplicate rows from the query output."
+  },
+  {
+    "id": "q9",
+    "topicId": "sql-pattern-matching",
+    "topicTitle": "Filtering Records (WHERE, LIKE)",
+    "domainType": "SQL",
+    "question": "In SQL, which WHERE clause pattern matches any customer name starting with 'A'?",
+    "options": [
+      "WHERE name = 'A*'",
+      "WHERE name LIKE 'A%'",
+      "WHERE name IN ('A')",
+      "WHERE name = '%A'"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "LIKE 'A%' matches text starting with letter A followed by any characters."
+  },
+  {
+    "id": "q10",
+    "topicId": "sql-joins-advanced",
+    "topicTitle": "GROUP BY & Aggregations",
+    "domainType": "SQL",
+    "question": "Which SQL clause filters aggregated groups calculated by GROUP BY (e.g. total sales > 50000)?",
+    "options": ["WHERE", "HAVING", "ORDER BY", "LIMIT"],
+    "correctOptionIndex": 1,
+    "explanation": "HAVING filters aggregated group results after GROUP BY execution."
+  },
+  {
+    "id": "q11",
+    "topicId": "sql-joins-basics",
+    "topicTitle": "Relational JOINs (INNER, LEFT)",
+    "domainType": "SQL",
+    "question": "Which JOIN returns all rows from the left table and matching rows from the right table?",
+    "options": ["INNER JOIN", "RIGHT JOIN", "LEFT JOIN", "FULL OUTER JOIN"],
+    "correctOptionIndex": 2,
+    "explanation": "LEFT JOIN keeps all records from the left table regardless of matches in the right table."
+  },
+  {
+    "id": "q12",
+    "topicId": "stats-central-tendency",
+    "topicTitle": "Measures of Central Tendency (Mean, Median, Mode)",
+    "domainType": "STATISTICS",
+    "question": "Which measure of central tendency is least sensitive to extreme outliers in a dataset?",
+    "options": ["Mean", "Median", "Standard Deviation", "Range"],
+    "correctOptionIndex": 1,
+    "explanation": "The median is robust against extreme outliers compared to the mean."
+  },
+  {
+    "id": "q13",
+    "topicId": "stats-normal-distribution-zscore",
+    "topicTitle": "Normal Distribution & Z-Scores",
+    "domainType": "STATISTICS",
+    "question": "What percentage of data falls within +/- 1 standard deviation of the mean in a standard normal distribution?",
+    "options": ["50%", "68%", "95%", "99.7%"],
+    "correctOptionIndex": 1,
+    "explanation": "The empirical rule dictates ~68% of data falls within 1 standard deviation in a normal distribution."
+  },
+  {
+    "id": "q14",
+    "topicId": "python-dicts-sets",
+    "topicTitle": "Dictionaries & Sets (Key-Value Store & Operations)",
+    "domainType": "PYTHON",
+    "question": "In Python, which data structure stores key-value pairs enclosed in curly braces {}?",
+    "options": ["List", "Tuple", "Dictionary", "Set"],
+    "correctOptionIndex": 2,
+    "explanation": "Dictionaries store key-value mappings in Python."
+  },
+  {
+    "id": "q15",
+    "topicId": "powerbi-dax-sum-sumx",
+    "topicTitle": "DAX Fundamentals (SUM vs SUMX Iterators)",
+    "domainType": "POWER_BI",
+    "question": "In Power BI, what language is used to create dynamic custom calculated columns and measures?",
+    "options": ["SQL", "DAX", "Python", "VBA"],
+    "correctOptionIndex": 1,
+    "explanation": "DAX (Data Analysis Expressions) is used for calculations in Power BI."
+  }
+]

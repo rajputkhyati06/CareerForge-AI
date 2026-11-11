@@ -1,0 +1,46 @@
+{
+  "topicId": "excel-sumif",
+  "slug": "excel-sumif",
+  "title": "Conditional Sums (SUMIF / COUNTIF)",
+  "skillTitle": "Excel Analytics",
+  "levelTitle": "Level 2 — Data Analysis & Formulas",
+  "estimatedStudyTimeMinutes": 25,
+  "summary": "Master aggregating numbers and counting records based on custom criteria in Excel using SUMIF and COUNTIF functions.",
+  "sections": [
+    {
+      "id": "theory",
+      "title": "1. Theory & Core Concept",
+      "content": "In real-world data analysis, you rarely aggregate an entire column without criteria. For example, business leaders often ask: 'What were total sales in the East region?' or 'How many orders exceeded $500?'\n\nThe SUMIF function allows you to calculate the sum of cells in a specified range that satisfy a given criteria.",
+      "keyTakeaways": [
+        "SUMIF syntax: =SUMIF(range, criteria, [sum_range])",
+        "If sum_range is omitted, Excel sums the cells evaluated in range.",
+        "COUNTIF syntax: =COUNTIF(range, criteria) to count occurrences matching criteria."
+      ]
+    },
+    {
+      "id": "syntax",
+      "title": "2. Syntax & Formula Breakdown",
+      "codeSnippet": "=SUMIF(A2:A100, \"East\", C2:C100)\n=COUNTIF(C2:C100, \">500\")",
+      "explanation": "• Range (A2:A100): The range of cells you want evaluated by criteria ('Region' column).\n• Criteria (\"East\"): The condition that defines which cells will be added.\n• Sum_Range (C2:C100): The actual cells to sum ('Revenue' column)."
+    },
+    {
+      "id": "business-case",
+      "title": "3. Real Business Use Case",
+      "content": "A retail manager at an e-commerce company needs to analyze monthly sales performance across 4 regions: North, South, East, and West.\nInstead of manually filtering rows or making multiple copies, she uses =SUMIF(RegionRange, \"East\", SalesRange) to dynamically calculate regional revenue figures for executive reporting.",
+      "codeSnippet": "// Regional Revenue Summary Table Formula\n=SUMIF(Data!$B$2:$B$5000, Summary!A2, Data!$E$2:$E$5000)"
+    },
+    {
+      "id": "practice",
+      "title": "4. Interactive Practice Exercise",
+      "question": "Suppose column A contains Product Categories ('Electronics', 'Clothing') and column B contains Sale Amounts. What formula sums sales for 'Electronics'?",
+      "options": [
+        "=SUMIF(A2:A50, \"Electronics\", B2:B50)",
+        "=COUNTIF(A2:A50, \"Electronics\")",
+        "=SUM(A2:B50)",
+        "=VLOOKUP(\"Electronics\", A2:B50, 2)"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "=SUMIF(A2:A50, \"Electronics\", B2:B50) evaluates Category range A2:A50 for 'Electronics' and sums matching rows in Sales range B2:B50."
+    }
+  ]
+}
